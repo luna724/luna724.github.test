@@ -1,0 +1,84 @@
+@keyframes slideUp {
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: -100px;
+    }
+}
+
+.always-lower {
+    padding: 40px 60px;
+    position: fixed;
+    bottom: -100px;
+    box-sizing: border-box;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    color: #aaaaaa;
+    background-color: #1a0137;
+    display: none;
+}
+
+.always-lower-2 {
+    padding: 40px 60px;
+    position: absolute;
+    bottom: -100px;
+    box-sizing: border-box;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    color: #aaaaaa;
+    background-color: #170030;
+}
+
+.always-lower.visible {
+    display: block;
+    animation: slideUp 0.1s ease forwards;
+}
+
+.always-lower.hidden {
+    animation: slideDown 2s ease backwards;
+}
+
+.vite-link p {
+    display: inline-flex;
+    gap: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #646cff;
+}
+
+.vite-logo {
+    height: 16px;
+}
+
+.powered-by-vite {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer-content {
+}
+
+.footer-links {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 7px;
+    border-radius: 5px;
+}

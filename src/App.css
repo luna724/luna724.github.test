@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.profile {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile h2 {
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+.profile p, h4, h5, h6 {
+  margin-top: 0.25em;
+  font-size: 1.05em;
+  margin-bottom: 0;
+}
+
+.profile a {
+  color: #646cff;
+  font-size: 1em;
+  margin-top: 0.35em;
+  margin-bottom: 0;
+}
+
+.compress-img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.img-p {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
